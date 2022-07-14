@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | ZAZO</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="componentes/css/adminlte.min.css">
+</head>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="componentes/img/project_20220307_1437384-01.png" alt="AdminLTELogo" 
+      height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-dark">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Inicio</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">1</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">Notificaciones</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> Solo quedan 211 libras de cafe
+            <span class="float-right text-muted text-sm">13 horas</span>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li> -->
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="componentes/img/usericon.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Jason Gomez</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active">
+                <img src="componentes/img/iconcoffee2.png" class="far nav-icon" alt="User Image">
+                <p>Ventas de cafe</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="componentes/img/finanzasicon.png" class="far nav-icon" alt="User Image">
+                <p>Finanzas<span class="right badge badge-danger">Nuevo</span></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="componentes/img/formicon.png" class="far nav-icon" alt="User Image">
+                <p>Formulario<span class="right badge badge-danger">Nuevo</span></p>
+              </a>
+            </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Cafe tostado y molido ZAZO</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active">DashboardZAZO</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="info-box">
+              <img src="componentes/img/dollaricon.png" class="info-box-icon elevation-2" alt="User Image">
+              <div class="info-box-content">
+                <span class="info-box-text">Dinero en caja</span>
+                <span class="info-box-number">$123.90</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="info-box mb-3">
+              <img src="componentes/img/granoicon.png" class="info-box-icon elevation-2" alt="User Image">
+              <div class="info-box-content">
+                <span class="info-box-text">Inventario</span>
+                <span class="info-box-number">211 Lbs</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="info-box mb-3">
+              <img src="componentes/img/carritoicon.png" class="info-box-icon elevation-2" alt="User Image">
+              <div class="info-box-content">
+                <span class="info-box-text">Ventas de la semana</span>
+                <span class="info-box-number">15 Lbs</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6">
+            <div class="info-box">
+              <img src="componentes/img/empaqueicon.png" class="info-box-icon elevation-2" alt="User Image">
+              <div class="info-box-content">
+                <span class="info-box-text">Empaques de Libras</span>
+                <span class="info-box-number">310</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-6">
+            <div class="info-box mb-3">
+              <img src="componentes/img/sticker.png" class="info-box-icon elevation-2" alt="User Image">
+              <div class="info-box-content">
+                <span class="info-box-text">Stickers</span>
+                <span class="info-box-number">280</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="text-center">
+                      <strong>Semana: 11 Julio, 2022 - 17 Julio, 2022</strong>
+                    </p>
+
+                    <div class="chart">
+                      <!-- Sales Chart Canvas -->
+                      <canvas id="salesChart" height="180" style="height: 180px;"></canvas>
+                    </div>
+                    <!-- /.chart-responsive -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-md-4">
+                    <p class="text-center">
+                      <strong>Datos al inicio de la semana</strong>
+                    </p>
+
+                    <div class="progress-group">
+                      Inventario Inicial Cafe
+                      <span class="float-right"><b>235</b>/720</span>
+                      <div class="progress progress-sm"></div>
+                    </div>
+                    <!-- /.progress-group -->
+
+                    <div class="progress-group">
+                      Empaques de Libra
+                      <span class="float-right"><b>90</b>/400</span>
+                      <div class="progress progress-sm"></div>
+                    </div>
+
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      <span class="progress-text">Stickers</span>
+                      <span class="float-right"><b>120</b>/400</span>
+                      <div class="progress progress-sm"></div>
+                    </div>
+
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      Empaques de fardos
+                      <span class="float-right"><b>17</b>/60</span>
+                      <div class="progress progress-sm"></div>
+                    </div>
+                    <!-- /.progress-group -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-12">
+            
+            <!-- TABLE: Ventas -->
+            <div class="card">
+              <div class="card-header border-transparent">
+                <h3 class="card-title">Ventas de la semana</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table m-0">
+                    <thead>
+                      <tr>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Libras</th>
+                        <th>Dinero</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>11/jul/22</td>
+                        <td>Don Adrian</td>
+                        <td>1</td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">$3.00</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>11/jul/22</td>
+                        <td>Aladino</td>
+                        <td>2</td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">$6.00</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12/jul/22</td>
+                        <td>Jason</td>
+                        <td>12</td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">$36.00</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.table-responsive -->
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Anterior</a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">Siguiente</a>
+              </div>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+
+            <!-- TABLE: Regalias -->
+            <div class="card">
+              <div class="card-header border-transparent">
+                <h3 class="card-title">Donaciones de la semana</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table m-0">
+                    <thead>
+                      <tr>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Libras</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>11/jul/22</td>
+                        <td>Consumo Oficina</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>12/jul/22</td>
+                        <td>Jason por compra de 12 Libras</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.table-responsive -->
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Anterior</a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">Siguiente</a>
+              </div>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Agroindustria Santa Isabel, S.A. de C.V.</strong>
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="componentes/js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="componentes/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="componentes/js/dashboard.js"></script>
+</body>
+</html>
